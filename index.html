@@ -1,205 +1,233 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hong Kong Local Offer Flyers | Mailaverse GEO Prototype</title>
-  <meta name="description" content="A structured collection of Hong Kong local offer flyers with visible summaries, search-intent questions and embedded JSON-LD examples.">
+  <title>香港本地優惠</title>
+  <meta name="description" content="查找香港本地折扣、現金回贈、優惠券及限期推廣，並清楚了解商戶、地點、有效期及領取方法。">
   <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Mailaverse GEO flyer prototype offers",
-    "description": "A small prototype list of selected Mailaverse flyer pages for testing semantic text and JSON-LD structured data.",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_001_bafang.html",
-        "name": "八方雲集長者專屬禮遇"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://jwu07421.github.io/geo-flyer-prototype/#website",
+      "name": "香港本地優惠",
+      "url": "https://jwu07421.github.io/geo-flyer-prototype/",
+      "inLanguage": "zh-Hant",
+      "description": "查找香港本地折扣、現金回贈、優惠券及限期推廣。"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://jwu07421.github.io/geo-flyer-prototype/#webpage",
+      "url": "https://jwu07421.github.io/geo-flyer-prototype/",
+      "name": "香港本地優惠",
+      "isPartOf": {
+        "@id": "https://jwu07421.github.io/geo-flyer-prototype/#website"
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_002_aeon.html",
-        "name": "AEON x 日清の出前一丁放題"
+      "breadcrumb": {
+        "@id": "https://jwu07421.github.io/geo-flyer-prototype/#breadcrumb"
       },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_003_sushi_express.html",
-        "name": "爭鮮外帶彩虹新店開幕優惠"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_004_hei_chop.html",
-        "name": "囍筷 33% 現金回贈"
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_005_madhouse.html",
-        "name": "The Madhouse 50% 現金回贈"
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_006_sino_mooncake_recycling.html",
-        "name": "信和集團月餅罐回收 HK$20 奇華優惠券"
+      "inLanguage": "zh-Hant",
+      "dateModified": "2026-11-03",
+      "mainEntity": {
+        "@id": "https://jwu07421.github.io/geo-flyer-prototype/#offer-list"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://jwu07421.github.io/geo-flyer-prototype/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://jwu07421.github.io/geo-flyer-prototype/"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://jwu07421.github.io/geo-flyer-prototype/#offer-list",
+      "name": "香港本地優惠",
+      "description": "精選香港本地商戶優惠，包括折扣、現金回贈、優惠券及限期推廣。",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_001_bafang.html",
+          "name": "八方雲集長者專屬禮遇"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_002_aeon.html",
+          "name": "AEON x 日清の出前一丁放題"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_003_sushi_express.html",
+          "name": "爭鮮外帶彩虹新店開幕優惠"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_004_hei_chop.html",
+          "name": "囍筷 33% 現金回贈"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_005_madhouse.html",
+          "name": "The Madhouse 50% 現金回贈"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_006_sino_mooncake_recycling.html",
+          "name": "信和集團月餅罐回收 HK$20 奇華優惠券"
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <div class="brand">Mailaverse GEO Flyer Prototype</div>
-      <a class="nav-link" href="README.md">README</a>
+      <a class="brand" href="index.html">香港本地優惠<span class="brand-sub">Hong Kong Local Offers</span></a>
+      <a class="nav-link" href="index.html">全部優惠</a>
     </div>
   </header>
 
   <main class="page-shell">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <span aria-current="page">Home</span>
+    <nav class="breadcrumbs" aria-label="導覽路徑">
+      <span aria-current="page">首頁</span>
     </nav>
 
     <section class="intro">
-      <p class="eyebrow">Mailaverse local offer prototype</p>
-      <h1>Hong Kong Local Offer Flyers</h1>
-      <p class="lead">Find local discounts, cashback offers, coupons and limited-time promotions with clear merchant, location, validity and redemption information.</p>
-      <p class="muted">Each flyer has a dedicated detail page with visible semantic text, question-and-answer phrasing, source information and embedded JSON-LD structured data.</p>
+      <h1>香港本地優惠</h1>
+      <p class="lead">查找香港本地折扣、現金回贈、優惠券及限期推廣，並清楚了解商戶、地點、有效期及領取方法。</p>
     </section>
 
-    <section class="question-strip" aria-labelledby="search-questions-heading">
+    <section class="help-strip" aria-labelledby="help-heading">
       <div class="section-heading">
-        <p class="eyebrow">Search intent layer</p>
-        <h2 id="search-questions-heading">What local offer are you looking for?</h2>
+        <h2 id="help-heading">查找優惠時可先了解</h2>
       </div>
-      <div class="question-grid">
-        <article class="question-item">
-          <h3>Where can I find a nearby discount?</h3>
-          <p>Open a flyer detail page to check the district, address, nearby transport signal and redemption location.</p>
+      <div class="help-grid">
+        <article class="help-item">
+          <h3>附近有甚麼折扣？</h3>
+          <p>打開優惠詳情頁，即可查看地區、地址、鄰近交通及領取地點。</p>
         </article>
-        <article class="question-item">
-          <h3>What do I need to do to claim it?</h3>
-          <p>Each page explains the spending condition, membership requirement, receipt process or in-store action.</p>
+        <article class="help-item">
+          <h3>怎樣領取優惠？</h3>
+          <p>每頁都會說明消費條件、會員要求、收據流程或店內換領方法。</p>
         </article>
-        <article class="question-item">
-          <h3>Who is this offer suitable for?</h3>
-          <p>Audience labels and natural-language summaries connect each offer with realistic user needs and search intent.</p>
+        <article class="help-item">
+          <h3>這項優惠適合誰？</h3>
+          <p>詳情頁會說明適用對象、使用條件及注意事項。</p>
         </article>
       </div>
     </section>
 
-    <section class="source-bar" aria-label="Prototype source and update information">
-      <p><strong>Source:</strong> <a href="https://portal.mailaverse.io/promotions">Mailaverse public promotions</a> · <strong>Last reviewed:</strong> <time datetime="2026-11-03">3 November 2026</time></p>
-      <p class="muted">Original flyer information is preserved. Added summaries are intended to clarify the offer for users and machine-readable page structure.</p>
-    </section>
+    <p class="source-bar">資料來源：<a href="https://portal.mailaverse.io/promotions">Mailaverse 公開優惠記錄</a> · 最近審閱：<time datetime="2026-11-03">2026年11月3日</time></p>
 
-    <section class="offer-grid" aria-label="Selected flyer pages">
+    <section class="offer-grid" aria-label="精選優惠">
       <a class="offer-card" href="offers/offer_001_bafang.html">
-        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/flyers/8725f884-cecf-4f3e-906e-ceb6dc8c4cad.png" alt="八方雲集長者專屬禮遇 flyer">
+        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/flyers/8725f884-cecf-4f3e-906e-ceb6dc8c4cad.png" alt="八方雲集長者專屬禮遇宣傳單張">
         <div class="offer-card-body">
           <div class="merchant">八方雲集</div>
-          <h2>HK$15 Senior Afternoon Tea Offer</h2>
-          <p class="reward">JoyYou Card holders can enjoy wonton soup with hot soy milk for HK$15.</p>
+          <h2>八方雲集長者專屬禮遇</h2>
+          <p class="reward">樂悠咭持有人可以 HK$15 享用珍珠餛飩湯配熱豆漿。</p>
           <div class="tag-row">
-            <span class="tag">Senior offer</span>
-            <span class="tag">F&B</span>
-            <span class="tag">Dine-in</span>
+            <span class="tag">長者優惠</span>
+            <span class="tag">餐飲</span>
+            <span class="tag">堂食</span>
           </div>
         </div>
       </a>
 
       <a class="offer-card" href="offers/offer_002_aeon.html">
-        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1791027240029_coverPhoto_1791027239620.jpeg" alt="AEON x 出前一丁放題 flyer">
+        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1791027240029_coverPhoto_1791027239620.jpeg" alt="AEON x 日清の出前一丁放題宣傳單張">
         <div class="offer-card-body">
           <div class="merchant">AEON</div>
-          <h2>AEON x Demae Iccho Bag-Filling Promotion</h2>
-          <p class="reward">Buy a selected eco bag for HK$100 and fill it with Demae Iccho products during the event period.</p>
+          <h2>AEON x 日清の出前一丁放題</h2>
+          <p class="reward">以 HK$100 購買指定環保袋，可於活動期間自行裝取出前一丁產品。</p>
           <div class="tag-row">
-            <span class="tag">Retail event</span>
-            <span class="tag">Limited time</span>
-            <span class="tag">In-store</span>
+            <span class="tag">零售活動</span>
+            <span class="tag">限時優惠</span>
+            <span class="tag">店內換領</span>
           </div>
         </div>
       </a>
 
       <a class="offer-card" href="offers/offer_003_sushi_express.html">
-        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/flyers/37bd74fc-16dc-4d5b-b337-3d75eebb409e.png" alt="爭鮮外帶彩虹新店開幕優惠 flyer">
+        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/flyers/37bd74fc-16dc-4d5b-b337-3d75eebb409e.png" alt="爭鮮外帶彩虹新店開幕優惠宣傳單張">
         <div class="offer-card-body">
           <div class="merchant">爭鮮 SUSHI EXPRESS</div>
-          <h2>Choi Hung Takeaway Store Opening Offer</h2>
-          <p class="reward">Three-day opening promotion with salmon sushi box at HK$25 and selected sushi boxes from HK$20.</p>
+          <h2>爭鮮外帶彩虹新店開幕優惠</h2>
+          <p class="reward">開幕三日優惠：三文魚壽司十貫 HK$25，精選壽司餐盒 HK$20 起。</p>
           <div class="tag-row">
-            <span class="tag">Restaurant</span>
-            <span class="tag">Opening offer</span>
-            <span class="tag">Choi Hung</span>
+            <span class="tag">餐飲</span>
+            <span class="tag">開幕優惠</span>
+            <span class="tag">彩虹</span>
           </div>
         </div>
       </a>
 
       <a class="offer-card" href="offers/offer_004_hei_chop.html">
-        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/flyers/be16b729-46cf-4326-9c2f-cbbdcfa36b12.png" alt="囍筷 33% cashback flyer">
+        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/flyers/be16b729-46cf-4326-9c2f-cbbdcfa36b12.png" alt="囍筷 33% 現金回贈宣傳單張">
         <div class="offer-card-body">
           <div class="merchant">盛滙商舖基金 / 囍筷</div>
-          <h2>Causeway Bay Dining 33% Cashback</h2>
-          <p class="reward">Spend at 囍筷, submit the receipt by WhatsApp, and receive 33% cashback through FPS or PayMe.</p>
+          <h2>囍筷 33% 現金回贈</h2>
+          <p class="reward">於囍筷消費後以 WhatsApp 提交收據，可經 FPS 或 PayMe 獲 33% 現金回贈。</p>
           <div class="tag-row">
-            <span class="tag">Cashback</span>
-            <span class="tag">Receipt workflow</span>
-            <span class="tag">Causeway Bay</span>
+            <span class="tag">現金回贈</span>
+            <span class="tag">收據換領</span>
+            <span class="tag">銅鑼灣</span>
           </div>
         </div>
       </a>
 
       <a class="offer-card" href="offers/offer_005_madhouse.html">
-        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1790765015491_coverPhoto_1790765011333.png" alt="The Madhouse 50% cashback flyer">
+        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1790765015491_coverPhoto_1790765011333.png" alt="The Madhouse 50% 現金回贈宣傳單張">
         <div class="offer-card-body">
           <div class="merchant">盛滙商舖基金 / The Madhouse</div>
-          <h2>Mong Kok Taproom 50% Cashback</h2>
-          <p class="reward">Mailaverse members can claim a 50% cashback coupon with a maximum eligible spend of HK$300.</p>
+          <h2>The Madhouse 50% 現金回贈</h2>
+          <p class="reward">郵宇賞會員可領取 50% 現金回贈優惠券，每張單最高計 HK$300。</p>
           <div class="tag-row">
-            <span class="tag">Cashback</span>
-            <span class="tag">Rebate cap</span>
-            <span class="tag">Mong Kok</span>
+            <span class="tag">現金回贈</span>
+            <span class="tag">回贈上限</span>
+            <span class="tag">旺角</span>
           </div>
         </div>
       </a>
 
       <a class="offer-card" href="offers/offer_006_sino_mooncake_recycling.html">
-        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/flyers/78d3bc1e-450d-4238-8495-13ba56b0217a.png" alt="信和集團月餅罐回收優惠券 flyer">
+        <img src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/flyers/78d3bc1e-450d-4238-8495-13ba56b0217a.png" alt="信和集團月餅罐回收優惠券宣傳單張">
         <div class="offer-card-body">
           <div class="merchant">信和集團 Sino Group</div>
-          <h2>Mooncake Tin Recycling HK$20 Coupon</h2>
-          <p class="reward">Recycle clean metal mooncake tins at designated Sino malls to redeem a HK$20 Kee Wah coupon.</p>
+          <h2>信和集團月餅罐回收 HK$20 奇華優惠券</h2>
+          <p class="reward">於指定信和商場回收乾淨金屬月餅罐，可換領 HK$20 奇華優惠券。</p>
           <div class="tag-row">
-            <span class="tag">Mid-Autumn</span>
-            <span class="tag">Coupon</span>
-            <span class="tag">Sustainability</span>
+            <span class="tag">中秋</span>
+            <span class="tag">優惠券</span>
+            <span class="tag">環保回收</span>
           </div>
         </div>
       </a>
     </section>
-
-    <section class="method-note" aria-labelledby="prototype-method-heading">
-      <h2 id="prototype-method-heading">How this prototype is structured</h2>
-      <ul class="method-list">
-        <li><strong>Visual layer:</strong> the original flyer image remains visible.</li>
-        <li><strong>Semantic layer:</strong> the page adds readable summaries, facts, audience terms and questions users may ask.</li>
-        <li><strong>Structured layer:</strong> JSON-LD describes the merchant, offer, location, validity and project-specific fields.</li>
-        <li><strong>Evidence layer:</strong> source links, update dates and limitations are shown instead of hidden claims.</li>
-      </ul>
-    </section>
+  </main>
 
     <footer class="site-footer">
-      <p>Research prototype for comparing image-only flyer information with visible semantic text and embedded structured data.</p>
-      <a href="README.md">Prototype notes</a>
+      <div class="site-footer-inner">
+        <p>本網站為課程研究原型，整理公開的 Mailaverse 傳單優惠頁面，並非官方 Mailaverse Jetso 網站。優惠日期及條款請向商戶核實。</p>
+        <a href="README.md">原型說明</a>
+      </div>
     </footer>
-  </main>
 </body>
 </html>

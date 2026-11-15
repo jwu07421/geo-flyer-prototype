@@ -1,148 +1,184 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AEON x Demae Iccho Bag-Filling Promotion</title>
-  <meta name="description" content="AI-readable flyer page for AEON x Demae Iccho limited-time retail event promotion with embedded JSON-LD.">
+  <title>AEON x 日清の出前一丁放題｜AEON</title>
+  <meta name="description" content="AEON 與日清推出限期店內活動：以 HK$100 購買指定環保袋，可於活動時段自行裝取出前一丁產品。">
   <link rel="sitemap" type="application/xml" href="../sitemap.xml">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script type="application/ld+json">
-  {
-    "@context": {
-      "schema": "https://schema.org/",
+{
+  "@context": [
+    "https://schema.org",
+    {
       "mailaverse": "https://mailaverse.io/ns#",
       "minimumSpend": "mailaverse:minimumSpend",
       "redemptionMethod": "mailaverse:redemptionMethod",
       "audiencePersona": "mailaverse:audiencePersona",
       "semanticTriggers": "mailaverse:semanticTriggers",
       "sourcePromotionId": "mailaverse:sourcePromotionId"
-    },
-    "@type": "schema:Store",
-    "@id": "https://portal.mailaverse.io/promotions#VwJ4HzD20ojRaQeBpbHX",
-    "sourcePromotionId": "VwJ4HzD20ojRaQeBpbHX",
-    "schema:name": "AEON",
-    "schema:image": "https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1791027240029_coverPhoto_1791027239620.jpeg",
-    "schema:areaServed": {
-      "@type": "schema:AdministrativeArea",
-      "schema:name": "Hong Kong"
-    },
-    "schema:makesOffer": {
-      "@type": "schema:Offer",
-      "schema:name": "AEON x 日清の出前一丁放題",
-      "schema:description": "於指定推廣時段用 HK$100 購買指定環保袋，可自行裝取出前一丁，裝到多少包即可帶走多少包。",
-      "schema:validFrom": "2026-10-04T14:00:00+08:00",
-      "schema:validThrough": "2026-10-04T16:00:00+08:00",
-      "schema:category": "Retail event promotion",
-      "schema:availability": "https://schema.org/LimitedAvailability",
-      "minimumSpend": {
-        "@type": "schema:MonetaryAmount",
-        "schema:currency": "HKD",
-        "schema:value": 100
-      },
-      "redemptionMethod": "Purchase a selected eco bag for HK$100 during the promotion period at participating AEON supermarkets, then fill it with Demae Iccho products.",
-      "audiencePersona": [
-        "household_shoppers",
-        "families",
-        "budget_conscious_users"
-      ],
-      "semanticTriggers": [
-        "limited-time retail event",
-        "Demae Iccho",
-        "AEON supermarket",
-        "HK$100 eco bag",
-        "family shopping"
-      ]
     }
-  }
+  ],
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_002_aeon.html#webpage",
+      "url": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_002_aeon.html",
+      "name": "AEON x 日清の出前一丁放題",
+      "description": "於指定推廣時段用 HK$100 購買指定環保袋，可自行裝取出前一丁，裝到多少包即可帶走多少包。",
+      "inLanguage": "zh-Hant",
+      "isPartOf": {
+        "@id": "https://jwu07421.github.io/geo-flyer-prototype/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_002_aeon.html#breadcrumb"
+      },
+      "primaryImageOfPage": "https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1791027240029_coverPhoto_1791027239620.jpeg",
+      "dateModified": "2026-11-03",
+      "mainEntity": {
+        "@id": "https://portal.mailaverse.io/promotions#VwJ4HzD20ojRaQeBpbHX"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_002_aeon.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首頁",
+          "item": "https://jwu07421.github.io/geo-flyer-prototype/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "商戶優惠",
+          "item": "https://jwu07421.github.io/geo-flyer-prototype/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AEON x 日清の出前一丁放題",
+          "item": "https://jwu07421.github.io/geo-flyer-prototype/offers/offer_002_aeon.html"
+        }
+      ]
+    },
+    {
+      "@type": "Store",
+      "@id": "https://portal.mailaverse.io/promotions#VwJ4HzD20ojRaQeBpbHX",
+      "sourcePromotionId": "VwJ4HzD20ojRaQeBpbHX",
+      "name": "AEON",
+      "image": "https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1791027240029_coverPhoto_1791027239620.jpeg",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Hong Kong"
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "AEON x 日清の出前一丁放題",
+        "description": "於指定推廣時段用 HK$100 購買指定環保袋，可自行裝取出前一丁，裝到多少包即可帶走多少包。",
+        "validFrom": "2026-10-04T14:00:00+08:00",
+        "validThrough": "2026-10-04T16:00:00+08:00",
+        "category": "Retail event promotion",
+        "availability": "https://schema.org/LimitedAvailability",
+        "minimumSpend": {
+          "@type": "MonetaryAmount",
+          "currency": "HKD",
+          "value": 100
+        },
+        "redemptionMethod": "Purchase a selected eco bag for HK$100 during the promotion period at participating AEON supermarkets, then fill it with Demae Iccho products.",
+        "audiencePersona": [
+          "household_shoppers",
+          "families",
+          "budget_conscious_users"
+        ],
+        "semanticTriggers": [
+          "limited-time retail event",
+          "Demae Iccho",
+          "AEON supermarket",
+          "HK$100 eco bag",
+          "family shopping"
+        ]
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <div class="brand">Mailaverse GEO Flyer Prototype</div>
-      <a class="nav-link" href="../index.html">Back to homepage</a>
+      <a class="brand" href="../index.html">香港本地優惠<span class="brand-sub">Hong Kong Local Offers</span></a>
+      <a class="nav-link" href="../index.html">全部優惠</a>
     </div>
   </header>
 
   <main class="page-shell">
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="../index.html">Home</a><span>/</span><span aria-current="page">AEON offer</span>
+    <nav class="breadcrumbs" aria-label="導覽路徑">
+      <a href="../index.html">首頁</a><span>›</span><a href="../index.html">商戶優惠</a><span>›</span><span aria-current="page">AEON x 日清の出前一丁放題</span>
     </nav>
+
     <section class="intro">
-      <p class="eyebrow">Flyer Detail Page</p>
+      <p class="merchant-kicker">AEON</p>
       <h1>AEON x 日清の出前一丁放題</h1>
-      <p class="muted">This page tests how a retail event promotion can be represented with both visible offer text and embedded structured data.</p>
-      <div class="page-meta"><span class="meta-chip">Retail event</span><span class="meta-chip">Question-answer format</span><span class="meta-chip">JSON-LD embedded</span></div>
+      <p class="hero-intro">AEON 的優惠。請查看以下詳情。</p>
     </section>
 
     <section class="detail-grid">
       <article class="panel">
-        <img class="flyer-image" src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1791027240029_coverPhoto_1791027239620.jpeg" alt="AEON Demae Iccho promotion flyer">
-        <div class="panel-body">
-          <h2>What is this offer?</h2>
-          <p>AEON and Nissin run a limited-time in-store event. Customers can purchase a selected eco bag for HK$100 and fill it with Demae Iccho products during the event window.</p>
-          <div class="section json-note">
-            <h3>JSON-LD Layer</h3>
-            <p>The page head describes the merchant as a store and the promotion as an offer with a minimum purchase condition, event time, and redemption method.</p>
-          </div>
-        </div>
+        <img class="flyer-image" src="https://storage.googleapis.com/flyer-genie.firebasestorage.app/coverPhoto/1791027240029_coverPhoto_1791027239620.jpeg" alt="AEON x 日清の出前一丁放題宣傳單張">
       </article>
 
       <aside class="panel">
         <div class="panel-body">
-          <h2>Extracted Fields</h2>
+          <h2>優惠資料</h2>
           <dl class="field-list">
-            <dt>Merchant</dt>
+            <dt>商戶</dt>
             <dd>AEON</dd>
-            <dt>Offer type</dt>
-            <dd>Retail event promotion</dd>
-            <dt>Discount / reward</dt>
-            <dd>Buy a selected eco bag for HK$100 and fill it with Demae Iccho products.</dd>
-            <dt>Validity</dt>
-            <dd>2026-10-04, 14:00-16:00.</dd>
-            <dt>Redemption</dt>
-            <dd>Participate in-store at selected AEON supermarkets.</dd>
-            <dt>Audience</dt>
-            <dd>Household shoppers, families, budget-conscious users.</dd>
-            <dt>Location signal</dt>
-            <dd>AEON supermarkets, excluding some branches according to source text.</dd>
+            <dt>優惠內容</dt>
+            <dd>以 HK$100 購買指定環保袋，可自行裝取出前一丁產品。</dd>
+            <dt>有效期</dt>
+            <dd>2026年10月4日，下午 2:00 至 4:00。</dd>
+            <dt>領取方法</dt>
+            <dd>於指定 AEON 超級市場店內參加。</dd>
+            <dt>地點</dt>
+            <dd>AEON 超級市場，部分分店除外（以原文為準）。</dd>
           </dl>
-          <div class="section schema-note">
-            <h3>Schema Gap</h3>
-            <p>The event rule is understandable in text, but Schema.org does not directly express a bag-filling quantity mechanic, so a custom redemption method remains useful.</p>
-          </div>
         </div>
       </aside>
     </section>
 
-    <section class="persona-section" aria-labelledby="persona-heading">
-      <p class="eyebrow">Semantic persona layer</p>
-      <h2 id="persona-heading">Who might be looking for this offer?</h2>
-      <p class="persona-summary">This page is relevant to supermarket and household shoppers looking for a limited-time value promotion. The visible wording connects the HK$100 purchase condition, the participating AEON branches, the event time and the Demae Iccho product context.</p>
-      <div class="persona-grid">
-        <article class="persona-item"><h3>Target persona</h3><p>商超與日常採購者</p></article>
-        <article class="persona-item"><h3>Likely search question</h3><p>Where can I find a limited-time supermarket deal?</p></article>
-        <article class="persona-item"><h3>Search triggers</h3><p>supermarket deal; value for money; HK$100; selected branches; limited-time; household shopping</p></article>
-      </div>
+    <section class="section" aria-labelledby="details-heading">
+      <h2 id="details-heading">優惠詳情</h2>
+      <p>AEON 與日清於指定時段推出店內活動。顧客可以 HK$100 購買指定環保袋，並於活動時段自行裝取出前一丁產品，裝到多少包即可帶走多少包。活動於 2026年10月4日下午 2:00 至 4:00，在指定 AEON 超級市場進行，部分分店除外，到訪前請先確認參與分店。</p>
+      <p class="audience-line"><strong>適用對象：</strong>日常購物的家庭及尋找限期超市優惠的顧客</p>
     </section>
 
-    <section class="question-list" aria-labelledby="offer-questions-heading">
-      <h2 id="offer-questions-heading">Questions this page answers</h2>
-      <article class="question-item"><h3>What do I receive?</h3><p>Buy a selected eco bag for HK$100 and fill it with Demae Iccho products during the event period.</p></article>
-      <article class="question-item"><h3>Where can I redeem it?</h3><p>The promotion is available at participating AEON supermarkets. The participating-store list should be checked before visiting.</p></article>
-      <article class="question-item"><h3>Who is this offer suitable for?</h3><p>It is suitable for household shoppers, families and customers looking for a limited-time supermarket promotion.</p></article>
+    <section class="section question-list" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">常見問題</h2>
+        <article class="question-item"><h3>可以得到甚麼？</h3><p>於活動期間以 HK$100 購買指定環保袋，並自行裝取出前一丁產品。</p></article>
+        <article class="question-item"><h3>在哪裏領取？</h3><p>此優惠於指定 AEON 超級市場進行，到訪前請先確認參與分店名單。</p></article>
+        <article class="question-item"><h3>這項優惠適合誰？</h3><p>適合日常購物的家庭，以及尋找限期超市優惠的顧客。</p></article>
     </section>
 
-    <section class="source-section" aria-labelledby="source-heading">
-      <h2 id="source-heading">Source and update information</h2>
-      <ul class="source-list">
-        <li><strong>Source:</strong> <a href="https://portal.mailaverse.io/promotions#VwJ4HzD20ojRaQeBpbHX">Mailaverse promotion record</a></li>
-        <li>Dataset record reviewed against the 3 November 2026 API snapshot.</li>
-        <li>The structured fields preserve the HK$100 purchase condition and event time from the source record.</li>
-        <li>This page is a prototype example and does not claim that JSON-LD alone improves search ranking.</li>
-      </ul>
+    <section class="section merchant-block" aria-labelledby="merchant-heading">
+      <h2 id="merchant-heading">商戶資料</h2>
+      <p class="merchant-name">AEON</p>
+      <p>服務地區：香港</p>
+    </section>
+
+    <section class="section" aria-labelledby="source-heading">
+      <h2 id="source-heading">資料來源</h2>
+      <p class="source-line">資料來源：<a href="https://portal.mailaverse.io/promotions#VwJ4HzD20ojRaQeBpbHX">Mailaverse 優惠記錄</a> · 最近審閱：<time datetime="2026-11-03">2026年11月3日</time></p>
     </section>
   </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p>本網站為課程研究原型，整理公開的 Mailaverse 傳單優惠頁面，並非官方 Mailaverse Jetso 網站。優惠日期及條款請向商戶核實。</p>
+        <a href="../README.md">原型說明</a>
+      </div>
+    </footer>
 </body>
 </html>

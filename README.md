@@ -7,7 +7,7 @@ This is an academic prototype for the CUHK MSc FinTech industrial project (FTEC5
 
 # Mailaverse GEO Flyer Website Prototype
 
-This folder contains a small static website prototype for testing AI-readable flyer pages.
+This folder contains a small static website prototype of Hong Kong local offer flyer pages.
 
 ## Structure
 
@@ -22,40 +22,18 @@ This folder contains a small static website prototype for testing AI-readable fl
 - `sitemap.xml`: list of prototype URLs for crawl discovery.
 - `robots.txt`: basic crawler access policy and sitemap location.
 
-## Prototype Purpose
+## Visible pages and structured data
 
-The prototype tests whether selected flyer information can be represented as:
+The public pages are written as a Traditional Chinese Hong Kong promotions directory. Offer facts stay visible in ordinary consumer copy, including the title, flyer image, offer details, key facts, optional FAQ, merchant information, source link and review date.
 
-- visible semantic text for users and AI-assisted search;
-- persona-oriented visible content showing who the offer may be relevant to, what they may search for, and which trigger words describe the context;
-- direct question-and-answer sections that reflect natural search language;
-- clear headings, lists, breadcrumbs and consistent page vocabulary;
-- source links, update information and explicit data limitations as authority signals;
-- embedded JSON-LD structured data for search engine readability;
-- Schema.org-compatible fields plus Mailaverse-specific extension fields.
-
-The prototype does not use keyword stuffing or hidden promotional text. Important information is placed in visible summaries, factual question-and-answer sections, image alt text and structured data. This keeps the semantic layer useful to people as well as machine-readable systems.
+JSON-LD is embedded in each page `<head>` as `application/ld+json` and is not shown on the visible page. The structured data uses a Schema.org `@graph` (WebSite / WebPage / BreadcrumbList, plus ItemList on the homepage or the merchant Offer entity on detail pages) and preserves Schema.org merchant and offer fields together with Mailaverse-specific extension fields.
 
 ## Testing Method
 
-1. Open `index.html` locally.
-2. Click each flyer card to open its detail page.
-3. Copy the detail page HTML into Google Rich Results Test using Code mode.
-4. Copy the JSON-LD block into Schema Markup Validator.
-5. Record which standard fields are detected and which project-specific fields remain custom extensions.
-
-## Detail Page Structure
-
-Each flyer detail page follows the same structure:
-
-1. Breadcrumb navigation and a descriptive page title.
-2. Original flyer image with descriptive alt text.
-3. Visible semantic summary answering what the offer is.
-4. Extracted merchant, offer, validity, redemption, audience and location fields.
-5. Visible semantic persona section with a target audience, likely search question and trigger words.
-6. Question-and-answer section covering user intent.
-7. Source, update and limitation information.
-8. JSON-LD in the page head for the merchant, offer and custom project fields.
+1. Open `index.html` locally or the public GitHub Pages URL.
+2. Open a flyer detail page and confirm that structured data is not rendered as visible page copy.
+3. Use Google Rich Results Test or Schema Markup Validator on the public URL (or the page source) to inspect the JSON-LD in the document head.
+4. Record which standard fields are detected and which project-specific fields remain custom extensions.
 
 ## Current Test Pages
 
