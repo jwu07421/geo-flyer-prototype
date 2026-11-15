@@ -391,6 +391,20 @@ p {
   font-weight: 700;
 }
 
+.branch-list {
+  margin: 8px 0 0;
+  padding-left: 1.2em;
+}
+
+.branch-list li {
+  margin: 0 0 4px;
+}
+
+.merchant-block .branch-list {
+  color: var(--ink);
+}
+
+
 .source-line {
   color: var(--muted);
   font-size: 14px;
