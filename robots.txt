@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jwu07421.github.io/geo-flyer-prototype/sitemap.xml
